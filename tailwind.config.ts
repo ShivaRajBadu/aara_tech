@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        foreground: " rgb(var(--foreground) / <alpha-value>)",
+        background: " rgb(var(--background) / <alpha-value>)",
+        primary: " rgb(var(--primary) / <alpha-value>)",
+        headingText: " rgb(var(--heading-text) / <alpha-value>)",
+        paraText: " rgb(var(--para-text) / <alpha-value>)",
+        subtitle: " rgb(var(--subtitle) / <alpha-value>)",
+        secondary: " rgb(var(--secondary) / <alpha-value>)",
+      },
     },
   },
   plugins: [],

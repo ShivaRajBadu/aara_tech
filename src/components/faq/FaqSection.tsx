@@ -13,14 +13,14 @@ const FaqSection = () => {
   return (
     <section className=" bg-foreground  py-20 ">
       <Wrappper>
-        <div className="flex items-start justify-between">
-          <div className="w-[30%]">
-            <h1 className="text-headingText text-balance text-[48px] font-semibold">
+        <div className="flex flex-col md:flex-row items-start justify-between">
+          <div className="w-full md:w-[30%]">
+            <h1 className="text-headingText md:text-balance text-[48px] font-semibold">
               Frequently Asked Question
             </h1>
           </div>
 
-          <div className="w-[50%]">
+          <div className="w-full md:w-[50%]">
             {faq.map((item, index) => (
               <FAQItem
                 key={item.id}

@@ -14,11 +14,6 @@
   --video-border: 81, 112, 162;
 }
 
-body {
-  color: rgb(var(--foreground));
-  background-color: rgb(var(--background));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

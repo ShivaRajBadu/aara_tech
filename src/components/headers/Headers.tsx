@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 
 const Headers = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-background text-foreground">
       <Navigation />
       <HeroSection />
     </div>

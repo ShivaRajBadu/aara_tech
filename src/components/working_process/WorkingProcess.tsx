@@ -7,7 +7,7 @@ const WorkingSteps = dynamic(() => import("./WorkingSteps"));
 
 const WorkingProcess = () => {
   return (
-    <div className="py-12  relative">
+    <div className="py-12  relative bg-background text-foreground">
       <Wrappper>
         <div>
           <h1 className="text-foreground text-center text-[48px] font-semibold pb-10">

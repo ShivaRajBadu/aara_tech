@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import Banner from "@/components/Banner";
 import BeforeAfter from "@/components/BeforeAfter";
 import ClientSection from "@/components/ClientSection";
 import FaqSection from "@/components/faq/FaqSection";
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonial />
       <AboutSection />
       <BeforeAfter />
+      <Banner />
     </>
   );
 }

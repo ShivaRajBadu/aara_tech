@@ -11,16 +11,16 @@ const FaqSection = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section className=" bg-foreground  py-20 ">
+    <section className=" bg-foreground  py-10 md:py-20 ">
       <Wrappper>
-        <div className="flex flex-col md:flex-row items-start justify-between">
-          <div className="w-full md:w-[30%]">
-            <h1 className="text-headingText md:text-balance text-[48px] font-semibold">
+        <div className="flex flex-col lg:flex-row items-start justify-between">
+          <div className="w-full lg:w-[30%]">
+            <h1 className="text-headingText text-[28px] md:text-[40px] lg:text-[48px] font-semibold text-balance pb-8 lg:pb-0">
               Frequently Asked Question
             </h1>
           </div>
 
-          <div className="w-full md:w-[50%]">
+          <div className="w-full lg:w-[50%]">
             {faq.map((item, index) => (
               <FAQItem
                 key={item.id}

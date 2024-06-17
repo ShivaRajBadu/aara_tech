@@ -18,7 +18,7 @@ const Navigation = () => {
           />
         </div>
         <Link
-          className=" block rounded-[8px] bg-primary text-foreground px-6 py-2 text-base font-semibold"
+          className=" hidden sm:block rounded-[8px] bg-primary text-foreground px-6 py-2 text-base font-semibold"
           href="https://wa.me/919999999999"
         >
           Chat With Us on WhatsApp

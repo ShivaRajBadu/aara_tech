@@ -26,7 +26,7 @@ const FAQItem = ({
         onClick={onToggle}
         className="flex w-full cursor-pointer items-center justify-between py-4"
       >
-        <h3 className="text-headingText text-[20px] font-semibold">
+        <h3 className="text-headingText text-lg md:text-[20px] w-[90%] font-medium">
           {item.title}
         </h3>
         {isOpen ? (
@@ -69,7 +69,9 @@ const FAQItem = ({
         style={{ height }}
         className="overflow-hidden transition-all duration-500"
       >
-        <p className="text-paraText text-[16px] font-medium">{item.content}</p>
+        <p className="text-paraText text-sm md:text-[16px] font-medium">
+          {item.content}
+        </p>
       </div>
     </div>
   );

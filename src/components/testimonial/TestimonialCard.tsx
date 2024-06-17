@@ -20,7 +20,7 @@ const TestimonialCard = ({ index }: { index: number }) => {
         />
         <div className=" ">
           <h5 className="font-medium text-base text-headingText">
-            Sla er's Realm
+            Sla er&apos;s Realm
           </h5>
           <Stars starSize="20" rating={3} />
         </div>

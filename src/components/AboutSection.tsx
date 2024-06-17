@@ -10,7 +10,7 @@ const AboutSection = () => {
         <div className="flex gap-8 items-center justify-center">
           <div className="hidden md:block w-[40%]">
             <Image
-              src="/images/printing.png "
+              src="/images/about_img.png"
               alt="about"
               width={0}
               height={0}

@@ -12,8 +12,9 @@ const Navigation = () => {
           <Image
             src="/icons/logo.svg"
             alt="logo"
-            width={130}
-            height={36}
+            width={0}
+            height={0}
+            className="h-[36px] w-[130px]"
             priority
           />
         </div>

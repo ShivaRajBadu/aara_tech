@@ -3,8 +3,8 @@ const nextConfig = {
   redirects() {
     return [
       {
-        source: "/details",
-        destination: "/details/1",
+        source: "/works",
+        destination: "/works/1",
         permanent: true,
       },
     ];

@@ -1,11 +1,36 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 import Wrappper from "../Wrappper";
 import HeroVideo from "./HeroVideo";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const HeroSection = () => {
+  const target = useRef(null);
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  const scroll = useScroll({
+    target,
+  });
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
+  const scaleDimensions = () => {
+    return isMobile ? [1, 1] : [1.05, 1.2];
+  };
+
+  const scale = useTransform(scroll.scrollYProgress, [0, 1], scaleDimensions());
+
   return (
-    <div className="pb-8">
+    <div ref={target} className="pb-8">
       <Wrappper>
         <div className=" max-w-[972px] mx-auto text-center py-12">
           <h1
@@ -27,9 +52,14 @@ const HeroSection = () => {
             Chat With Us on WhatsApp
           </Link>
         </div>
-        <div className="h-[260px] md:h-[467px] lg:h-[773px] my-2 md:my-16 overflow-hidden rounded-[16px] border border-videoBorder">
+        <motion.div
+          style={{
+            scale,
+          }}
+          className="relative h-[260px] md:h-[467px] lg:h-[773px] my-2 md:my-16 overflow-hidden rounded-[16px] border border-videoBorder"
+        >
           <HeroVideo />
-        </div>
+        </motion.div>
       </Wrappper>
     </div>
   );

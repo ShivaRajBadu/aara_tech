@@ -1,6 +1,7 @@
 import React from "react";
 import Wrappper from "./Wrappper";
 import Image from "next/image";
+import Link from "next/link";
 
 const FeatureWorks = () => {
   return (
@@ -12,7 +13,12 @@ const FeatureWorks = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div className=" " key={item}>
+              <Link
+                prefetch={false}
+                href={`/works/${item}`}
+                className=" "
+                key={item}
+              >
                 <div className="relative group cursor-pointer h-[390px] md:h-[336px] lg:h-[436px] xl:h-[596px] w-full  flex overflow-hidden rounded-[16px]">
                   <Image
                     src={`/images/works/work_${item}.png`}
@@ -48,7 +54,7 @@ const FeatureWorks = () => {
                     />
                   </svg>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

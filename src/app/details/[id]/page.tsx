@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import FeatureWorks from "@/components/FeatureWorks";
 import Wrappper from "@/components/Wrappper";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,15 +15,15 @@ const page = () => {
           width={0}
           height={0}
           sizes="(100vw, 100vh)"
-          className="w-full h-[600px] object-fill"
+          className="w-full h-[400px] lg:h-[570px] object-fill"
         />
       </div>
       <Wrappper>
-        <div className="flex justify-between py-16">
-          <h1 className="text-[48px] font-semibold text-headingText">
+        <div className="flex flex-col lg:flex-row justify-between max-lg:gap-10 py-16">
+          <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-semibold text-headingText">
             Architecture Plans
           </h1>
-          <p className=" text-lg font-normal text-paraText w-[40%] text-balance">
+          <p className=" text-base md:text-lg font-normal text-paraText w-full lg:w-[40%] text-balance">
             Lorem ipsum dolor sit amet consectetur. Eleifend dui dis lacinia
             pellentesque potenti eu habitasse. Nec ut non vitae in euismod
             viverra mauris odio quisque. Scelerisque velit at tempus a tempor.
@@ -32,25 +33,29 @@ const page = () => {
             nulla nisl. Justo eu amet eget etiam urna semper neque.
           </p>
         </div>
-        <div className="flex gap-10 justify-between items-start py-10">
-          <div className="space-y-12">
+        <div className="flex flex-col lg:flex-row gap-5 md:gap-10 justify-between items-start py-10">
+          <div className="flex gap-12  flex-col md:flex-row lg:flex-col ">
             <div>
-              <h4 className="text-headingText text-[24px] font-bold">Client</h4>
-              <p className="text-paraText text-[20px] font-medium">
+              <h4 className="text-headingText text-lg md:text-[24px] font-bold">
+                Client
+              </h4>
+              <p className="text-paraText text-base md:text-[20px] font-medium">
                 Company Name
               </p>
             </div>
             <div>
-              <h4 className="text-headingText text-[24px] font-bold">Date</h4>
-              <p className="text-paraText text-[20px] font-medium">
+              <h4 className="text-headingText text-lg md:text-[24px] font-bold">
+                Date
+              </h4>
+              <p className="text-paraText text-base md:text-[20px] font-medium">
                 March 2024
               </p>
             </div>
-            <div className="text-headingText text-[24px] font-bold">
+            <div className="text-headingText text-lg md:text-[24px] font-bold">
               <h4>Website</h4>
               <Link
                 prefetch={false}
-                className="text-paraText text-[20px] font-medium"
+                className="text-paraText text-base md:text-[20px] font-medium"
                 href="https://shivarajbadu.com.np"
                 target="_blank"
               >
@@ -58,7 +63,7 @@ const page = () => {
               </Link>
             </div>
           </div>
-          <div className="relative w-[70%] h-[587px]">
+          <div className="relative w-full lg:w-[70%] h-[300px] md:h-[448px] lg:h-[587px]">
             <Image
               src="/images/client_side.png"
               fill
@@ -67,9 +72,9 @@ const page = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between gap-10 items-start py-16">
-          <div className="w-[40%] py-2">
-            <h4 className="text-headingText text-[40px] font-semibold">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 items-start py-6 md:py-16">
+          <div className="w-full lg:w-[40%] py-2">
+            <h4 className="text-headingText text-[28px] md:text-[40px] font-semibold">
               The Challenge
             </h4>
             <p className="text-paraText text-base font-medium pt-8">
@@ -85,7 +90,7 @@ const page = () => {
               dictum eget nibh tortor commodo cursus.
             </p>
           </div>
-          <div className=" relative h-[496px] rounded-[16px] overflow-hidden w-[50%]">
+          <div className=" relative h-[280px] md:h-[496px] rounded-[16px] overflow-hidden w-full lg:w-[50%]">
             <Image
               src="/images/develop_1.png"
               fill
@@ -94,8 +99,8 @@ const page = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between gap-10 items-start py-16">
-          <div className=" relative h-[496px] rounded-[16px] overflow-hidden w-[50%]">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 items-start py-6 md:py-16">
+          <div className=" order-2 md:order-1 relative h-[280px] md:h-[496px] rounded-[16px] overflow-hidden w-full lg:w-[50%]">
             <Image
               src="/images/develop_2.png"
               fill
@@ -103,8 +108,8 @@ const page = () => {
               alt="the challenge image"
             />
           </div>
-          <div className="w-[40%] py-2">
-            <h4 className="text-headingText text-[40px] font-semibold">
+          <div className=" w-full order-1 md:order-2 lg:w-[40%] py-2">
+            <h4 className="text-headingText text-[28px] md:text-[40px] font-semibold">
               The Outcome
             </h4>
             <p className="text-paraText text-base font-medium pt-8">
@@ -121,13 +126,13 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-6 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
           <Image
             src="/images/develop_1.png"
             alt="prototype"
             width={0}
             height={0}
-            className="w-[50%]  h-[640px]  rounded-[16px]"
+            className="w-full md:w-[50%]  h-[320px] md:h-[350px] lg:h-[640px]  rounded-[16px]"
             sizes="(100vw, 100vh)"
           />
           <Image
@@ -135,11 +140,11 @@ const page = () => {
             alt="prototype"
             width={0}
             height={0}
-            className="w-[50%]  h-[640px] rounded-[16px]"
+            className="w-full md:w-[50%]   h-[320px] md:h-[640px] rounded-[16px]"
             sizes="(100vw, 100vh)"
           />
         </div>
-        <div className="relative h-[640px] my-10 rounded-[16px] overflow-hidden w-full">
+        <div className="relative  h-[275px] md:h-[400px] lg:h-[640px] my-10 rounded-[16px] overflow-hidden w-full">
           <Image
             src="/images/develop_2.png"
             fill
@@ -147,13 +152,13 @@ const page = () => {
             alt="the challenge image"
           />
         </div>
-        <div className="flex w-full gap-6 items-center justify-center py-10">
+        <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
           <Image
             src="/images/develop_4.png"
             alt="prototype"
             width={0}
             height={0}
-            className="w-[50%]  h-[640px] bg-gray-200  rounded-[16px]"
+            className="w-full md:w-[50%] bg-gray-300  h-[320px] md:h-[350px] lg:h-[640px]  rounded-[16px]"
             sizes="(100vw, 100vh)"
           />
           <Image
@@ -161,11 +166,12 @@ const page = () => {
             alt="prototype"
             width={0}
             height={0}
-            className="w-[50%]  h-[640px] rounded-[16px]"
+            className="w-full md:w-[50%]   h-[320px] md:h-[640px] rounded-[16px]"
             sizes="(100vw, 100vh)"
           />
         </div>
       </Wrappper>
+      <FeatureWorks />
       <AboutSection />
     </div>
   );

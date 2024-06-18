@@ -1,8 +1,16 @@
+"use client";
 import React from "react";
 import Wrappper from "../Wrappper";
 import TestimonialCard from "./TestimonialCard";
+import { useQuery } from "@tanstack/react-query";
+import { getTestimonialData } from "@/lib/api";
 
 const Testimonial = () => {
+  const { data, isPending, error } = useQuery({
+    queryKey: ["Testimonial"],
+    queryFn: getTestimonialData,
+  });
+
   return (
     <div className="py-20 bg-[#D6DAFF]">
       <Wrappper>
@@ -10,9 +18,19 @@ const Testimonial = () => {
           Testimonial
         </h1>
         <div className="grid justify-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 py-6 ">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
-            <TestimonialCard key={item} index={item} />
-          ))}
+          {data &&
+            data.map((each: any, index: number) => (
+              <TestimonialCard key={each.sys.id} each={each} index={index} />
+            ))}
+          {isPending &&
+            !error &&
+            [1, 2, 3, 4, 5].map((item) => (
+              // shimmer
+              <div
+                key={item}
+                className="h-[400px] w-[300px] bg-gray-200 rounded-lg animate-pulse"
+              ></div>
+            ))}
         </div>
       </Wrappper>
     </div>

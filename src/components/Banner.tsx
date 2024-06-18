@@ -1,8 +1,15 @@
+"use client";
 import React from "react";
 import Wrappper from "./Wrappper";
 import ProductCard from "./ProductCard";
+import { getCustomProductData } from "@/lib/api";
+import { useQuery } from "@tanstack/react-query";
 
 const Banner = () => {
+  const { data, isPending, error } = useQuery({
+    queryKey: ["customProduct"],
+    queryFn: getCustomProductData,
+  });
   return (
     <section className="bg-gradient-to-r from-[#7D92FF] to-[#7C9EE8]  relative py-8 md:py-16">
       <img
@@ -20,10 +27,20 @@ const Banner = () => {
               Buy Product
             </button>
           </div>
-          <div className=" grid grid-cols-3 gap-5 w-full lg:w-[50%] ">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <ProductCard key={item} />
-            ))}
+          <div className=" grid grid-cols-3 grid-rows-2 gap-5 w-full lg:w-[50%] ">
+            {data &&
+              data.map((each: any) => (
+                <ProductCard key={each.sys.id} each={each} />
+              ))}
+            {isPending &&
+              !error &&
+              [1, 2, 3, 4, 5].map((item) => (
+                <div
+                  key={item}
+                  className="w-full h-[115px] md:h-[180px] lg:h-[185px] bg-gray-200 rounded-lg animate-pulse"
+                ></div>
+              ))}
+            {error && <div>Sorry something went wrong</div>}
           </div>
         </div>
       </Wrappper>

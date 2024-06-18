@@ -27,7 +27,7 @@ const ClientSection = () => {
                   <img
                     src={item.clientLogo.url}
                     className="w-full h-full object-contain mix-blend-multiply"
-                    alt="client logo"
+                    alt={item.clientLogo.title}
                   />
                 </div>
               </div>

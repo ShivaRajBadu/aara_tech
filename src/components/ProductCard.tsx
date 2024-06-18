@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductCard = () => {
+const ProductCard = ({ each }: { each: any }) => {
   return (
     <div
       style={{
@@ -10,14 +10,14 @@ const ProductCard = () => {
       className="bg-foreground  relative z-10  rounded-[8px] border-[5px] border-foreground"
     >
       <img
-        src="/images/final.jpg"
-        alt="product"
+        src={each.image.url}
+        alt={each.image.title}
         width={0}
         height={0}
         className="w-full h-[115px] md:h-[180px] lg:h-[185px] object-cover rounded-l-[8px] rounded-r-[8px] rounded-b-[0px]"
       />
       <h3 className="text-headingText text-xs md:text-sm lg:text-base font-semibold text-center py-1 md:py-2">
-        Magical 3D lamps
+        {each.title}
       </h3>
     </div>
   );

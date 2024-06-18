@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  redirects() {
-    return [
+  output: "export",
+  images: {
+    remotePatterns: [
       {
-        source: "/works",
-        destination: "/works/1",
-        permanent: true,
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+        port: "",
+        pathname: "/**",
       },
-    ];
+    ],
   },
 };
 

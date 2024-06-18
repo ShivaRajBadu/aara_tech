@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Provider from "@/components/Provider";
 
 // const ttWellingtonsFont = localFont({
 //   variable: "--font-tt-wellingtons",
@@ -62,8 +63,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={""}>
-        {children}
-        <Footer />
+        <Provider>
+          {children}
+          <Footer />
+        </Provider>
       </body>
     </html>
   );

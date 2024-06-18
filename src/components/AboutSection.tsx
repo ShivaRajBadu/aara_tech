@@ -1,6 +1,5 @@
 import React from "react";
 import Wrappper from "./Wrappper";
-import Image from "next/image";
 import Link from "next/link";
 
 const AboutSection = () => {
@@ -9,12 +8,9 @@ const AboutSection = () => {
       <Wrappper>
         <div className="flex gap-8 items-center justify-center">
           <div className="hidden md:block w-[40%]">
-            <Image
+            <img
               src="/images/about_img.png"
               alt="about"
-              width={0}
-              height={0}
-              sizes="(100vw, 100vh)"
               className="w-[368px] mx-auto h-[368px] object-contain"
             />
           </div>

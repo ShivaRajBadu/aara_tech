@@ -1,6 +1,5 @@
 import React from "react";
 import Wrappper from "./Wrappper";
-import Image from "next/image";
 import Link from "next/link";
 
 const FeatureWorks = () => {
@@ -16,23 +15,19 @@ const FeatureWorks = () => {
               <Link
                 prefetch={false}
                 href={`/works/${item}`}
-                className=" "
+                className=" w-full"
                 key={item}
               >
                 <div className="relative group cursor-pointer h-[390px] md:h-[336px] lg:h-[436px] xl:h-[596px] w-full  flex overflow-hidden rounded-[16px]">
-                  <Image
+                  <img
                     src={`/images/works/work_${item}.png`}
                     alt="feature"
-                    fill
-                    sizes="(100vw, 100vh)"
-                    className="translate-x-0 group-hover:-translate-x-full transition-transform duration-500 ease-linear"
+                    className="absolute inset-0 block h-full object-cover w-full translate-x-0 group-hover:-translate-x-full transition-transform duration-500 ease-linear"
                   />
-                  <Image
+                  <img
                     src={`/images/works/work_${item + 1}.png`}
                     alt="feature"
-                    fill
-                    sizes="(100vw, 100vh)"
-                    className="translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-linear"
+                    className="absolute inset-0 object-cover w-full translate-x-full group-hover:translate-x-0 h-full block transition-transform duration-500 ease-linear"
                   />
                 </div>
                 <div className=" cursor-pointer flex items-center  justify-between py-6 ">
@@ -40,7 +35,7 @@ const FeatureWorks = () => {
                     Architecture Plans
                   </h2>
                   <svg
-                    className="h-5 w-5 md:w-6 md:h-6 lg:w-8 lg:h-8"
+                    className="h-5 w-5 md:w-6 md:h-6 lg:w-8 lg:h-8 animate-bounce"
                     viewBox="0 0 32 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

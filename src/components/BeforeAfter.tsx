@@ -1,6 +1,5 @@
 import React from "react";
 import Wrappper from "./Wrappper";
-import Image from "next/image";
 
 const BeforeAfter = () => {
   return (
@@ -12,12 +11,11 @@ const BeforeAfter = () => {
           </h1>
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10  py-8 ">
             <div className="w-full relative">
-              <Image
+              <img
                 src="/images/before.png"
                 alt="before printing"
                 width={0}
                 height={0}
-                sizes="(100vw, 100vh)"
                 className="w-full h-[414px] sm:h-[500px] md:h-[580px] lg:h-[600px] object-cover rounded-[16px]"
               />
               <p className="absolute top-5 left-5 md:top-10 md:left-10 rounded-full bg-paraText px-4 py-1 text-foreground text-sm md:text-base lg:text-lg font-medium">
@@ -25,12 +23,9 @@ const BeforeAfter = () => {
               </p>
             </div>
             <div className="w-full relative">
-              <Image
+              <img
                 src="/images/after.png"
                 alt="before printing"
-                width={0}
-                height={0}
-                sizes="(100vw, 100vh)"
                 className="w-full h-[414px] sm:h-[500px] md:h-[580px] lg:h-[600px] object-cover rounded-[16px]"
               />
               <p className="absolute top-5 left-5 md:top-10 md:left-10 rounded-full bg-paraText px-4 py-1 text-foreground text-sm md:text-base lg:text-lg font-medium">

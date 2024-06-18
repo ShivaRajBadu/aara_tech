@@ -1,20 +1,15 @@
+"use client";
 import React from "react";
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
-import Image from "next/image";
-import { ContainerScroll } from "../Text";
 
 const Headers = () => {
   return (
     <div className="w-full bg-background relative text-foreground  overflow-hidden pb-10">
-      <Image
+      <img
         src="/images/hero_pattern.png"
         alt=""
-        width={0}
-        height={0}
-        sizes="(100vw, 100vh)"
-        priority
-        className="absolute top-0 left-0 w-full h-full"
+        className="absolute z-0 top-0 left-0 w-full h-full"
       />
       <Navigation />
       <HeroSection />

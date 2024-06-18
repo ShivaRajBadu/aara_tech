@@ -1,20 +1,28 @@
 import AboutSection from "@/components/AboutSection";
 import FeatureWorks from "@/components/FeatureWorks";
 import Wrappper from "@/components/Wrappper";
-import Image from "next/image";
+
 import Link from "next/link";
 import React from "react";
 
-const page = () => {
+export function generateStaticParams() {
+  return [1, 2, 3, 4, 5].map((item) => ({
+    id: item.toString(),
+  }));
+}
+
+const page = ({ params }: { params: { id: string } }) => {
+  const { id } = params;
+  console.log(id);
+
   return (
     <div>
       <div>
-        <Image
+        <img
           src="/images/detail_main.png"
           alt="work"
           width={0}
           height={0}
-          sizes="(100vw, 100vh)"
           className="w-full h-[400px] lg:h-[570px] object-fill"
         />
       </div>
@@ -64,10 +72,9 @@ const page = () => {
             </div>
           </div>
           <div className="relative w-full lg:w-[70%] h-[300px] md:h-[448px] lg:h-[587px]">
-            <Image
+            <img
               src="/images/client_side.png"
-              fill
-              sizes="(100vw, 100vh)"
+              className="w-full h-full object-cover"
               alt="work to be done"
             />
           </div>
@@ -91,20 +98,18 @@ const page = () => {
             </p>
           </div>
           <div className=" relative h-[280px] md:h-[496px] rounded-[16px] overflow-hidden w-full lg:w-[50%]">
-            <Image
+            <img
               src="/images/develop_1.png"
-              fill
-              sizes="(100vw, 100vh)"
               alt="the challenge image"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-10 items-start py-6 md:py-16">
           <div className=" order-2 md:order-1 relative h-[280px] md:h-[496px] rounded-[16px] overflow-hidden w-full lg:w-[50%]">
-            <Image
+            <img
               src="/images/develop_2.png"
-              fill
-              sizes="(100vw, 100vh)"
+              className="w-full h-full object-cover"
               alt="the challenge image"
             />
           </div>
@@ -127,47 +132,34 @@ const page = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-          <Image
+          <img
             src="/images/develop_1.png"
             alt="prototype"
-            width={0}
-            height={0}
             className="w-full md:w-[50%]  h-[320px] md:h-[350px] lg:h-[640px]  rounded-[16px]"
-            sizes="(100vw, 100vh)"
           />
-          <Image
+          <img
             src="/images/develop_3.png"
             alt="prototype"
-            width={0}
-            height={0}
             className="w-full md:w-[50%]   h-[320px] md:h-[640px] rounded-[16px]"
-            sizes="(100vw, 100vh)"
           />
         </div>
         <div className="relative  h-[275px] md:h-[400px] lg:h-[640px] my-10 rounded-[16px] overflow-hidden w-full">
-          <Image
+          <img
             src="/images/develop_2.png"
-            fill
-            sizes="(100vw, 100vh)"
+            className="w-full h-full object-cover"
             alt="the challenge image"
           />
         </div>
         <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-          <Image
+          <img
             src="/images/develop_4.png"
             alt="prototype"
-            width={0}
-            height={0}
             className="w-full md:w-[50%] bg-gray-300  h-[320px] md:h-[350px] lg:h-[640px]  rounded-[16px]"
-            sizes="(100vw, 100vh)"
           />
-          <Image
+          <img
             src="/images/detail_main.png"
             alt="prototype"
-            width={0}
-            height={0}
             className="w-full md:w-[50%]   h-[320px] md:h-[640px] rounded-[16px]"
-            sizes="(100vw, 100vh)"
           />
         </div>
       </Wrappper>

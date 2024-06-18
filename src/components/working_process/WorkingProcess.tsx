@@ -1,6 +1,5 @@
 import React from "react";
 import Wrappper from "../Wrappper";
-import Image from "next/image";
 import dynamic from "next/dynamic";
 import { workingStep } from "@/constants";
 import ContentAnimation from "./ContentAnimation";
@@ -18,12 +17,9 @@ const WorkingProcess = () => {
             {workingStep.map((step: any, index: number) => (
               <div key={index} className="py-6">
                 <div>
-                  <Image
+                  <img
                     src={step.image}
                     alt={step.title}
-                    width={0}
-                    height={0}
-                    sizes="(100vw, 100vh)"
                     className="w-full h-[350px] md:h-[400px] object-cover"
                   />
                 </div>

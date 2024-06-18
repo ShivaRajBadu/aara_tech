@@ -1,12 +1,11 @@
 import React from "react";
 import Wrappper from "./Wrappper";
-import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="relative bg-background text-foreground py-24 overflow-hidden">
-      <Image
+      <img
         src="/icons/footer_bg.svg"
         width={300}
         height={300}
@@ -16,7 +15,7 @@ const Footer = () => {
       <Wrappper>
         <div className="flex flex-col gap-20 md:gap-0 md:flex-row justify-between">
           <div className="w-full md:w-[40%] ">
-            <Image width={200} height={56} src="/icons/logo.svg" alt="logo" />
+            <img width={200} height={56} src="/icons/logo.svg" alt="logo" />
             <p className="text-lg text-balance font-medium opacity-80 max-lg:w-[90%] py-6">
               Lorem ipsum dolor sit amet consectetur. Et vivamus leo vitae
               curabitur ultrices. Non ac orci diam arcu. Elit felis maecenas

@@ -1,21 +1,19 @@
 import React from "react";
 
-import Image from "next/image";
 import Wrappper from "../Wrappper";
 import Link from "next/link";
 
 const Navigation = () => {
   return (
     <Wrappper>
-      <div className="flex items-center justify-between py-6">
+      <div className="relative z-10 flex items-center justify-between py-6">
         <div>
-          <Image
+          <img
             src="/icons/logo.svg"
             alt="logo"
             width={0}
             height={0}
             className="h-[36px] w-[130px]"
-            priority
           />
         </div>
         <Link

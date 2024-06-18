@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Stars from "./Stars";
 
@@ -11,12 +10,10 @@ const TestimonialCard = ({ index }: { index: number }) => {
       } px-5 py-6 bg-foreground text-headingText  rounded-[16px]`}
     >
       <div className="flex items-start  gap-4">
-        <Image
+        <img
           src="/images/design.jpg"
           alt="user profile"
           className="object-cover rounded-full overflow-hidden w-[50px] h-[50px] "
-          width={0}
-          height={0}
         />
         <div className=" ">
           <h5 className="font-medium text-base text-headingText">
@@ -33,12 +30,9 @@ const TestimonialCard = ({ index }: { index: number }) => {
       </p>
       {/* <p className="text-headingText text-xl"> {index}</p> */}
       {showImage && (
-        <Image
+        <img
           src="/images/works/work_3.png"
           alt="test"
-          width={0}
-          height={0}
-          sizes="(100vw, 100vh)"
           className="w-full h-[330px] mt-5 rounded-[12px] object-cover"
         />
       )}

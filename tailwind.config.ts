@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "tt-wellingtons": ["var(--font-tt-wellingtons)"],
+      },
       colors: {
         foreground: " rgb(var(--foreground) , <alpha-value>)",
         background: " rgb(var(--background) , <alpha-value>)",

@@ -5,47 +5,47 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Provider from "@/components/Provider";
 
-// const ttWellingtonsFont = localFont({
-//   variable: "--font-tt-wellingtons",
-//   src: [
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialThin.oft",
-//       weight: "100",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialExtraLight.oft",
-//       weight: "200",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialLight.oft",
-//       weight: "300",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialRegular.oft",
-//       weight: "400",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialMedium.oft",
-//       weight: "500",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialSemiBold.oft",
-//       weight: "600",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialBold.oft",
-//       weight: "700",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialExtraBold.oft",
-//       weight: "800",
-//     },
-//     {
-//       path: "./fonts/tt_wellingtons/TTWellingtonsTrialBlack.oft",
-//       weight: "900",
-//     },
-//   ],
-// });
+const ttWellingtonsFont = localFont({
+  variable: "--font-tt-wellingtons",
+  src: [
+    {
+      path: "./fonts/TTWellingtonsTrialThin.ttf",
+      weight: "100",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialExtraLight.ttf",
+      weight: "200",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialLight.ttf",
+      weight: "300",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialRegular.ttf",
+      weight: "400",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialMedium.ttf",
+      weight: "500",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialSemiBold.ttf",
+      weight: "600",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialBold.ttf",
+      weight: "700",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialExtraBold.ttf",
+      weight: "800",
+    },
+    {
+      path: "./fonts/TTWellingtonsTrialBlack.ttf",
+      weight: "900",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -62,7 +62,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={""}>
+      <body className={`${ttWellingtonsFont.variable} `}>
         <Provider>
           {children}
           <Footer />

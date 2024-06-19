@@ -1,4 +1,4 @@
-import { inView, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import React from "react";
 
 const ContentAnimation = ({ step }: any) => {
@@ -11,7 +11,7 @@ const ContentAnimation = ({ step }: any) => {
       className="flex justify-center items-center h-full"
       style={{
         opacity: isInView ? 1 : 0,
-        transition: "all ease-in-out 0.5s",
+        transition: "all ease-in-out 0.6s",
       }}
       ref={ref}
     >

@@ -2,7 +2,7 @@ import React from "react";
 import Wrappper from "../Wrappper";
 import dynamic from "next/dynamic";
 import { workingStep } from "@/constants";
-import ContentAnimation from "./ContentAnimation";
+
 const WorkingSteps = dynamic(() => import("./WorkingSteps"));
 
 const WorkingProcess = () => {

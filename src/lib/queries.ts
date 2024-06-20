@@ -5,8 +5,9 @@ export const heroSectionQuery = `{
         id
       }
       title
-      subtitle
-      backgroundImage {
+      subtitleLeft
+      subtitleRight
+      heroImage {
         url
         title
       }
@@ -85,6 +86,20 @@ export function eachWorkQuery(id: string) {
           items{
             url
             title
+          }
+        }
+        otherProjectsCollection{
+          items{
+            sys{
+              id
+            }
+            projectTitle
+            imagesCollection(limit:2){
+              items{
+                url
+                title
+              }
+            }
           }
         }
      

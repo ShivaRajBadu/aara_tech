@@ -70,8 +70,7 @@ const HeroSection = () => {
           {data ? (
             <h1
               className="text-[36px] md:text-[48px] lg:text-[64px] font-semibold text-center bg-darkHeading 
-        bg-gradient-to-t from-[#E6EAF2]/0 to-[#C3CCD9]  bg-clip-text
-        "
+        bg-gradient-to-t from-[#E6EAF2]/0 to-[#C3CCD9]  bg-clip-text "
             >
               {data.title}
             </h1>
@@ -83,9 +82,15 @@ const HeroSection = () => {
           )}
 
           {data ? (
-            <p className="text-base md:text-lg font-medium text-subtitle text-center mt-6  text-balance mx-auto">
-              {data.subtitle}
-            </p>
+            <div className="flex mt-6 gap-6 text-start ">
+              <p className="text-base w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
+                {data.subtitleLeft}
+              </p>
+              <p className="border-2 rounded-full border-primary"></p>
+              <p className="text-base w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
+                {data.subtitleRight}
+              </p>
+            </div>
           ) : (
             <TextShimmer
               className="w-[80%] h-4 text-center mx-auto"
@@ -113,7 +118,7 @@ const HeroSection = () => {
             }}
             className="absolute inset-0 w-full h-full bg-background/90 z-20"
           ></motion.div>
-          <HeroVideo src={data?.backgroundImage.url} />
+          <HeroVideo src={data?.heroImage.url} />
         </motion.div>
       </Wrappper>
     </div>

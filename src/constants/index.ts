@@ -62,21 +62,21 @@ export const workingStep = [
     title: "Design",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error. Doloribus nobis voluptates quod perspiciatis fugiat officia. Asperiores, deserunt adipisci.",
-    image: "/images/design.jpg",
+    image: "/images/design.png",
   },
   {
     id: 3,
     title: "Prototype 3d Printed",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facere dolores repellat officiis culpa quisquam impedit illo eaque. Vel, veritatis?",
-    image: "/images/prototype.jpg",
+    image: "/images/prototype.png",
   },
   {
     id: 4,
     title: "Iterative Refinement",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facere dolores repellat officiis culpa quisquam impedit illo eaque. Vel, veritatis?",
-    image: "/images/refinement.jpg",
+    image: "/images/redesign.png",
   },
   {
     id: 5,

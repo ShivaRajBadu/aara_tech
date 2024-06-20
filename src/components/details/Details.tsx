@@ -10,6 +10,7 @@ import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import { notFound, useSearchParams } from "next/navigation";
 import React from "react";
+import OtherProjects from "./OtherProjects";
 
 const Details = () => {
   const params = useSearchParams();
@@ -127,7 +128,7 @@ const Details = () => {
         </div>
         <ImageGallery images={data.imagesCollection.items} />
       </Wrappper>
-      <FeatureWorks />
+      <OtherProjects works={data.otherProjectsCollection} />
       <AboutSection />
     </div>
   );

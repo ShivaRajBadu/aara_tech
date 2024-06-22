@@ -19,7 +19,7 @@ const AboutSection = () => {
               Lorem ipsum dolor sit amet consectetur. Donec.
             </h2>
             <Link
-              className=" block w-max max-md:mx-auto  rounded-[8px] bg-primary text-foreground px-6 py-2 text-base font-semibold"
+              className="hover:scale-[1.03] duration-300 ease-linear block w-max max-md:mx-auto  rounded-[8px] bg-primary text-foreground px-6 py-2 text-base font-semibold"
               href="https://wa.me/919999999999"
             >
               Chat With Us on WhatsApp

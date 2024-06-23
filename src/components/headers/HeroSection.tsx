@@ -69,7 +69,7 @@ const HeroSection = () => {
         >
           {data ? (
             <h1
-              className="text-[36px] md:text-[48px] lg:text-[64px] font-semibold text-center bg-darkHeading 
+              className="text-[30px] sm:text-[36px] md:text-[48px] lg:text-[64px] font-semibold text-center bg-darkHeading 
         bg-gradient-to-t from-[#E6EAF2]/0 to-[#C3CCD9]  bg-clip-text "
             >
               {data.title}
@@ -83,11 +83,11 @@ const HeroSection = () => {
 
           {data ? (
             <div className="flex mt-6 gap-6 text-start ">
-              <p className="text-base w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
+              <p className="text-sm w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
                 {data.subtitleLeft}
               </p>
               <p className="border-2 rounded-full border-primary"></p>
-              <p className="text-base w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
+              <p className="text-sm w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
                 {data.subtitleRight}
               </p>
             </div>

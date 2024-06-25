@@ -48,7 +48,7 @@ const ttWellingtonsFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Aara Tech",
+  title: "AaraTech",
 
   description: "",
   keywords: [
@@ -61,6 +61,7 @@ export const metadata: Metadata = {
     "custom 3d print",
     "3d printing services",
   ],
+
   metadataBase: new URL("https://aara.tech/"),
   alternates: {
     canonical: "/",

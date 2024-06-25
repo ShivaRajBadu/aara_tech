@@ -2,12 +2,9 @@ import React from "react";
 import Stars from "./Stars";
 
 const TestimonialCard = ({ each, index }: { each: any; index: number }) => {
-  const isLong = index === 0 || index == 2 || index === 3;
   return (
     <div
-      className={`${
-        isLong ? "row-span-2" : ""
-      } px-5 py-6 bg-foreground text-headingText  rounded-[16px]`}
+      className={` px-5 py-6 bg-foreground text-headingText  rounded-[16px]`}
     >
       <div className="flex items-start  gap-4">
         <img

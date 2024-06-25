@@ -54,35 +54,35 @@ export const workingStep = [
     id: 1,
     title: "Consulting",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit sapiente quisquam corrupti enim ut totam voluptates impedit? Soluta, consequatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, hic.",
+      "Our journey begins with a detailed consultation to understand your vision, goals, and requirements, setting a clear and viable roadmap for your project.",
     image: "/images/consulting.png",
   },
   {
     id: 2,
     title: "Design",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, error. Doloribus nobis voluptates quod perspiciatis fugiat officia. Asperiores, deserunt adipisci.",
+      "Using advanced CAD software, our designers create detailed models and plans, ensuring your ideas take precise shape.",
     image: "/images/design.png",
   },
   {
     id: 3,
     title: "Prototype 3d Printed",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facere dolores repellat officiis culpa quisquam impedit illo eaque. Vel, veritatis?",
+      "We then turn the designs into physical models using cutting edge digital manufacturing tools like 3D printing and laser cutting, allowing practical testing and validation.",
     image: "/images/prototype.png",
   },
   {
     id: 4,
     title: "Iterative Refinement",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facere dolores repellat officiis culpa quisquam impedit illo eaque. Vel, veritatis?",
+      "We refine the prototype through continuous feedback and testing, optimizing performance and ensuring quality.",
     image: "/images/redesign.png",
   },
   {
     id: 5,
     title: "Final Product",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facere dolores repellat officiis culpa quisquam impedit illo eaque. Vel, veritatis?",
+      "Our production team meticulously manufactures the final product, delivering high-quality, cost-effective solutions ready for use/deployment.",
     image: "/images/final.jpg",
   },
 ];
@@ -90,26 +90,32 @@ export const workingStep = [
 export const faq = [
   {
     id: 1,
-    title: "What is Frontend Mentor, and how will it help me?",
+    title: "What types of services do you offer?  ",
     content:
-      "Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.",
+      "We provide various parts/machine design and prototyping service such as production of custom parts, manufacture of functional products and design consultation. Whether you need a single prototype or multiple units, we can accommodate your needs with precision and efficiency.",
   },
   {
     id: 2,
-    title: "Is Frontend Mentor free?",
+    title: "Can you help with the design of my 3D model? ",
     content:
-      "Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.",
+      "Yes, we offer design services to help bring your ideas to life. Our experienced designers can assist with creating or optimizing your 3D models to ensure they are ready for 3Dprinting and laser cutting. Just contact us with your requirements, and we’ll guide you through the process.",
   },
   {
     id: 3,
-    title: "Can I use Frontend Mentor projects in my portfolio?",
+    title: "How do I place an order?  ",
     content:
-      "Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!",
+      "The simplest method will soon be launched. For now, you can provide us your details through our WhatsApp chat box. Our team provide will review your file details and guide you to further steps before starting the design and production process.",
   },
   {
     id: 4,
-    title: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
+    title: "How much will the services cost?  ",
     content:
-      "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
+      "The cost of services varies based on factors such as material, weight, size, design complexity, application purpose, aesthetic requirement and digital manufacturing process used. Our team will provide our rate after receiving your required product details. Our pricing is competitive, and we strive to offer the best value for high-quality results.",
+  },
+  {
+    id: 5,
+    title: " Do you offer bulk discounts? ",
+    content:
+      "Yes, we offer discounts for bulk orders. If you have a large project or need multiple copies of an item, please contact us to discuss pricing options.",
   },
 ];

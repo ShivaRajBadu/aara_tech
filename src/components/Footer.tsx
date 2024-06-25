@@ -17,9 +17,9 @@ const Footer = () => {
           <div className="w-full md:w-[40%] ">
             <img width={200} height={56} src="/icons/logo.svg" alt="logo" />
             <p className="text-lg text-balance font-medium opacity-80 max-lg:w-[90%] py-6">
-              Lorem ipsum dolor sit amet consectetur. Et vivamus leo vitae
-              curabitur ultrices. Non ac orci diam arcu. Elit felis maecenas
-              rutrum faucibus aliquet et a.
+              Aara Technology, where your product ideas become reality. As
+              industry pioneers, we turn concepts into field-ready products with
+              exceptional quality, cost-effectiveness, and timely delivery.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-20 ">

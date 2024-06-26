@@ -28,7 +28,7 @@ const Footer = () => {
               <ul className="space-y-4 mt-4">
                 <li>
                   <Link
-                    href={"https://www.facebook.com"}
+                    href={"https://www.facebook.com/AARATECH3D/"}
                     prefetch={false}
                     target="_blank"
                     className="text-lg font-medium"
@@ -48,7 +48,9 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={"https://www.linkedin.com"}
+                    href={
+                      "https://www.linkedin.com/company/101527612/admin/dashboard/"
+                    }
                     prefetch={false}
                     target="_blank"
                     className="text-lg font-medium"
@@ -58,7 +60,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={"https://www.instagram.com"}
+                    href={" https://www.instagram.com/aaratech3d/"}
                     prefetch={false}
                     target="_blank"
                     className="text-lg font-medium"

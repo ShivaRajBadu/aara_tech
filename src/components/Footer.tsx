@@ -38,7 +38,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={"https://wa.me/919999999999"}
+                    href={"https://wa.me/9817396487"}
                     prefetch={false}
                     target="_blank"
                     className="text-lg font-medium"

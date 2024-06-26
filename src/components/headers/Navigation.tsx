@@ -17,8 +17,9 @@ const Navigation = () => {
           />
         </div>
         <Link
+          target="_blank"
           className=" hover:scale-[1.03] duration-300 ease-linear hidden sm:block rounded-[8px] bg-primary text-foreground px-6 py-2 text-base font-semibold"
-          href="https://wa.me/919999999999"
+          href="https://wa.me/9817396487"
         >
           Chat With Us on WhatsApp
         </Link>

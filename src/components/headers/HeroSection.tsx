@@ -99,8 +99,9 @@ const HeroSection = () => {
           )}
 
           <Link
+            target="_blank"
             className="hover:scale-[1.03] duration-300 ease-linear mx-auto rounded-[8px] bg-primary text-foreground px-6 py-3 mt-10 block max-w-max text-base font-semibold"
-            href="https://wa.me/919999999999"
+            href="https://wa.me/9817396487"
           >
             Chat With Us on WhatsApp
           </Link>

@@ -2,9 +2,13 @@ import React from "react";
 import Stars from "./Stars";
 
 const TestimonialCard = ({ each, index }: { each: any; index: number }) => {
+  const addSpan = each.projectPhoto;
+
   return (
     <div
-      className={` px-5 py-6 bg-foreground text-headingText  rounded-[16px]`}
+      className={`${
+        addSpan ? "row-span-2" : ""
+      } px-5 py-6 bg-foreground text-headingText  rounded-[16px]`}
     >
       <div className="flex items-start  gap-4">
         <img

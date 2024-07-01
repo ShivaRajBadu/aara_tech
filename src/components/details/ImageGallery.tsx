@@ -34,7 +34,7 @@ const ImageGallery = ({ images }: { images: any[] }) => {
             >
               <img
                 src={images[index].url}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
                 alt={images[index].title}
               />
             </div>
@@ -50,7 +50,7 @@ const ImageGallery = ({ images }: { images: any[] }) => {
             >
               <img
                 src={images[index].url}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fill"
                 alt={images[index].title}
               />
             </div>

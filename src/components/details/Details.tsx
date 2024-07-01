@@ -14,10 +14,12 @@ import OtherProjects from "./OtherProjects";
 
 const Details = () => {
   const params = useSearchParams();
+  const queryId = params.get("id");
 
   const { data, isLoading, error } = useQuery({
-    queryKey: ["eachWork"],
-    queryFn: () => getEachWork(params.get("id")!),
+    queryKey: ["eachWork", queryId],
+    queryFn: () => getEachWork(queryId!),
+    enabled: !!queryId,
   });
 
   if (isLoading) {
@@ -34,16 +36,16 @@ const Details = () => {
 
   return (
     <div>
-      <div>
-        <img
-          src={data.imagesCollection.items[0].url}
-          alt={data.imagesCollection.items[0].title}
-          width={0}
-          height={0}
-          className="w-full h-[400px] lg:h-[570px] object-fill"
-        />
-      </div>
       <Wrappper>
+        <div>
+          <img
+            src={data.imagesCollection.items[0].url}
+            alt={data.imagesCollection.items[0].title}
+            width={0}
+            height={0}
+            className="w-full h-[400px] lg:h-[570px] object-fill"
+          />
+        </div>
         <div className="flex flex-col lg:flex-row justify-between max-lg:gap-10 py-16">
           <h1 className="text-[28px] md:text-[40px] lg:text-[48px] font-semibold text-headingText">
             {data.projectTitle}

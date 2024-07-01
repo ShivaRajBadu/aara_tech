@@ -15,7 +15,7 @@ const Testimonial = () => {
     <div className="py-20 bg-[#D6DAFF]">
       <Wrappper>
         <h1 className="text-headingText text-[52px] font-medium text-center pb-10">
-          Testimonial
+          Testimonials
         </h1>
         <div className="grid justify-start grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-8 py-6 ">
           {data &&

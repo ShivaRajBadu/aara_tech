@@ -10,7 +10,7 @@ const WorkCard = ({ workDetail }: { workDetail: featureWork }) => {
       className=" w-full"
       key={workDetail.sys.id}
     >
-      <div className="relative group cursor-pointer h-[390px] md:h-[336px] lg:h-[394px] w-full  flex overflow-hidden rounded-[16px]">
+      <div className="relative group cursor-pointer shadow h-[390px] md:h-[336px] lg:h-[400px] w-full  flex overflow-hidden rounded-[16px]">
         <img
           src={workDetail.imagesCollection.items[0].url}
           alt={workDetail.imagesCollection.items[0].title}

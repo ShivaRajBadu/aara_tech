@@ -5,13 +5,15 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="relative bg-background text-foreground py-24 overflow-hidden">
-      <img
-        src="/icons/footer_bg.svg"
-        width={300}
-        height={300}
-        alt="footer_bg"
-        className="absolute top-8 left-[8%]"
-      />
+      <Link href={"/"}>
+        <img
+          src="/icons/footer_bg.svg"
+          width={300}
+          height={300}
+          alt="footer_bg"
+          className="absolute top-8 left-[8%]"
+        />
+      </Link>
       <Wrappper>
         <div className="flex flex-col gap-20 md:gap-0 md:flex-row justify-between">
           <div className="w-full md:w-[40%] ">

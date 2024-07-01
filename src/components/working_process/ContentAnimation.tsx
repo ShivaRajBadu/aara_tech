@@ -20,7 +20,7 @@ const ContentAnimation = ({ step }: any) => {
         <h3 className="text-[24px] lg:text-[36px] font-semibold pt-3 pb-5">
           {step.title}
         </h3>
-        <p className="text-base lg:text-[20px] font-medium text-foreground/80 w-full max-w-[90%] text-balance">
+        <p className="text-base lg:text-[20px] leading-8 font-medium text-foreground/80 w-full max-w-[90%] text-balance">
           {step.content}
         </p>
       </div>

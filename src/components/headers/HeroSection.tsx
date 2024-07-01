@@ -73,9 +73,12 @@ const HeroSection = () => {
         bg-gradient-to-t from-[#E6EAF2]/0 to-[#C3CCD9]  bg-clip-text "
             >
               {/* {data.title} */}
-              Welcome to Aara Technology,{" "}
+              Welcome to Aara Technology{" "}
               <span className="text-[22px] block sm:text-[26px] md:text-[30px] lg:text-[44px] text-[#E6EAF2]/60">
-                where innovation meets execution
+                where{" "}
+                <span className="text-blue-400 font-bold">innovation</span>{" "}
+                meets <span className="text-blue-400 font-bold">execution</span>
+                .
               </span>
             </h1>
           ) : (
@@ -87,11 +90,13 @@ const HeroSection = () => {
 
           {data ? (
             <div className="flex mt-12 gap-6 text-start ">
-              <p className="text-xs sm:text-sm w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
+              <p className="text-xs sm:text-sm w-1/2 md:text-lg font-medium text-white   mx-auto">
+                <span className="text-blue-400 font-semibold">CONCEPTION:</span>{" "}
                 {data.subtitleLeft}
               </p>
               <p className="border-2 rounded-full border-primary"></p>
-              <p className="text-xs sm:text-sm w-1/2 md:text-lg font-medium text-subtitle   mx-auto">
+              <p className="text-xs sm:text-sm w-1/2 md:text-lg font-medium text-white   mx-auto">
+                <span className="text-blue-400 font-semibold">CREATION:</span>{" "}
                 {data.subtitleRight}
               </p>
             </div>

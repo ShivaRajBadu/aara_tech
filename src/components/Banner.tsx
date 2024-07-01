@@ -4,6 +4,7 @@ import Wrappper from "./Wrappper";
 import ProductCard from "./ProductCard";
 import { getCustomProductData } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
+import Link from "next/link";
 
 const Banner = () => {
   const { data, isPending, error } = useQuery({
@@ -23,9 +24,14 @@ const Banner = () => {
             <h1 className="text-[36px] lg:text-[65px] text-balance font-bold text-foreground">
               Get Customized 3d Products
             </h1>
-            <button className="bg-foreground my-8 px-6 py-3 text-primary rounded-[8px] text-[18px] font-semibold hover:scale-[1.03] duration-300">
+            <Link
+              href="https://www.instagram.com/aaratech3d/"
+              prefetch={false}
+              target="_blank"
+              className="bg-foreground block w-max my-8 px-6 py-3 text-primary rounded-[8px] text-[18px] font-semibold hover:scale-[1.03] duration-300"
+            >
               Buy Product
-            </button>
+            </Link>
           </div>
           <div className=" grid grid-cols-3 grid-rows-2 gap-5 w-full lg:w-[50%] ">
             {data &&
